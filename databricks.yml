@@ -1,0 +1,20 @@
+bundle:
+  name: fraud-detection
+
+resources:
+  jobs:
+    fraud-detection:
+      name: fraud-detection
+      tasks:
+        - task_key: create_feature_table
+          existing_cluster_id: 1234-567890-abcde123
+          notebook_task:
+            notebook_path: ./create_feature_table.ipynb
+        - task_key: train_model
+          existing_cluster_id: 1234-567890-abcde123
+          notebook_task:
+            notebook_path: ./train_model.ipynb
+
+targets:
+  dev:
+    default: true
