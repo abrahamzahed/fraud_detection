@@ -1,3 +1,8 @@
 catalog: dev
 schema: transactions
 table: credit_card_transactions
+
+artifact_path: fraud_model
+registered_model_name: fraud_model
+
+model_uri: XXXX
