@@ -1,0 +1,3 @@
+catalog: dev
+schema: transactions
+table: credit_card_transactions
